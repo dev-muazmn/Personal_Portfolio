@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Name – Portfolio</title>
+<meta name="description" content="Portfolio of Your Name, a web developer.">
+<style>
+:root{
+  --bg:#f6f7f4; --ink:#1d2421; --muted:#5b6762; --line:#d9ded9;
+  --accent:#1f5f4a; --card:#ffffff;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#121715; --ink:#e8ede9; --muted:#9aa7a0; --line:#2a332f; --accent:#6fcf9f; --card:#1a211e; }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font:17px/1.65 Georgia,"Times New Roman",serif;
+}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.5rem}
+header{padding:1.25rem 0;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+header strong{font-size:1.05rem}
+nav{display:flex;gap:1.25rem;font-family:system-ui,sans-serif;font-size:.95rem}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--accent)}
+.hero{padding:5rem 0 3.5rem}
+h1{font-size:clamp(2.4rem,7vw,3.8rem);line-height:1.1;margin:0 0 1.25rem;letter-spacing:-.02em}
+.hero p{font-size:1.2rem;color:var(--muted);max-width:34rem;margin:0 0 1.75rem}
+.btn{
+  display:inline-block;padding:.7rem 1.3rem;border-radius:6px;text-decoration:none;
+  font:600 .95rem system-ui,sans-serif;background:var(--accent);color:var(--bg);
+}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line);margin-left:.5rem}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 1.5rem}
+.projects{display:grid;gap:1.25rem}
+.project{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1.4rem}
+.project h3{margin:0 0 .4rem;font-size:1.15rem}
+.project p{margin:0 0 .8rem;color:var(--muted)}
+.tags{font:.85rem system-ui,sans-serif;color:var(--muted)}
+.project a{font:600 .95rem system-ui,sans-serif}
+.skills{display:flex;flex-wrap:wrap;gap:.5rem;padding:0;margin:0;list-style:none;font-family:system-ui,sans-serif;font-size:.92rem}
+.skills li{border:1px solid var(--line);border-radius:999px;padding:.3rem .85rem;background:var(--card)}
+footer{padding:2.5rem 0 3.5rem;border-top:1px solid var(--line);font-family:system-ui,sans-serif;font-size:.9rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <strong>Your Name</strong>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>I build clear, fast websites.</h1>
+    <p>Hi, I’m Your Name, a web developer based in Kuala Lumpur. I turn ideas into simple, useful products.</p>
+    <a class="btn" href="#work">See my work</a>
+    <a class="btn ghost" href="#contact">Get in touch</a>
+  </div>
+
+  <section id="work">
+    <h2>Selected projects</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>Weather Dashboard</h3>
+        <p>A responsive dashboard that shows a five-day forecast for any city.</p>
+        <div class="tags">HTML, CSS, JavaScript</div>
+        <a href="https://github.com/your-username/weather-dashboard">View on GitHub</a>
+      </article>
+      <article class="project">
+        <h3>Task Tracker</h3>
+        <p>A to-do app with filters and saved tasks that persist between visits.</p>
+        <div class="tags">React, Node.js</div>
+        <a href="https://github.com/your-username/task-tracker">View on GitHub</a>
+      </article>
+      <article class="project">
+        <h3>Recipe Finder</h3>
+        <p>Search recipes by the ingredients you already have at home.</p>
+        <div class="tags">Python, Flask, API</div>
+        <a href="https://github.com/your-username/recipe-finder">View on GitHub</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About me</h2>
+    <p>I’m a developer who cares about readable code and pages that load quickly. I enjoy learning new tools and helping small teams ship their first version.</p>
+    <ul class="skills" aria-label="Skills">
+      <li>HTML &amp; CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Python</li>
+      <li>Git &amp; GitHub</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to work together? Email me at <a href="mailto:you@example.com">you@example.com</a>.</p>
+    <p><a href="https://github.com/your-username">GitHub</a> and <a href="https://www.linkedin.com/in/your-username">LinkedIn</a></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 Your Name</div>
+</footer>
+</body>
+</html>
